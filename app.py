@@ -224,6 +224,7 @@ def get_transactions():
         ORDER BY t.date DESC
     """, (request.user_id,))
     
+    
     transactions = cursor.fetchall()
     cursor.close()
     conn.close()
